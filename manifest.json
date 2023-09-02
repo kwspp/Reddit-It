@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Google Search Extension",
+  "version": "1.0",
+  "description": "Adds Reddit results to Google Search",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
