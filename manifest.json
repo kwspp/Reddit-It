@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Reddit Google Search Extension",
+  "name": "Reddit-It",
   "version": "1.0",
   "description": "Adds Reddit results to Google Search",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.google.com/search*"],
